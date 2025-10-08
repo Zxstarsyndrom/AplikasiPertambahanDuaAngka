@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -51,6 +54,11 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
         angka2Field.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 angka2FieldFocusGained(evt);
+            }
+        });
+        angka2Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                angka2FieldActionPerformed(evt);
             }
         });
         angka2Field.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -224,6 +232,10 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
     private void angka1FieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_angka1FieldFocusGained
     angka1Field.setText("");
     }//GEN-LAST:event_angka1FieldFocusGained
+
+    private void angka2FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_angka2FieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_angka2FieldActionPerformed
 
     /**
      * @param args the command line arguments
